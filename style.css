@@ -1,0 +1,36 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/019/588/907/original/off-white-watercolor-space-background-soft-paper-texture-grunge-background-beautiful-white-abstract-watercolor-painting-textured-on-white-paper-background-graphics-design-vector.jpg);
+}
+header { border-style: double;}
+h1 { 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+    text-shadow: 5px 5px 5px #ababab;
+    text-align: center;}
+p { text-align: center;}
+img { width: 325px;
+      height: 300px;
+      
+}
+div {
+    width: 50px;
+    height: 45%;
+    display: inline-block;
+    column-rule: 50px;
+}
+
+section { 
+    vertical-align: top;
+    display: inline-block;
+    width: 350px;
+}
+
+h3 { 
+    vertical-align: top;
+    text-align: center;
+}
+
+footer { 
+    text-align: center;
+    border-style: double;
+}
