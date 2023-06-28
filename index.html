@@ -4,6 +4,31 @@
     <title> Know Your Mango </title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+    let response = prompt("Are mangoes your favorite fruit?") ;
+    if (response !== null) {
+        if (response.toLowerCase() === 'yes') {
+            console.log("Great! Mangoes are delicious.") ;
+        } else if (response.toLowerCase() === 'no') {
+            console.log("That's alright. Mangoes may not be for everyone.") ;
+        } else {
+            console.log("Invalid response. Please answer with 'yes' or 'no'.") 
+        }
+    }
+</script>
+<script>
+    let response2 = prompt ("Did you know there are almost 300 different types of mangoes? ");
+    if (response !== null) {
+        if (response2.toLowerCase() === 'yes') {
+            console.log("You are a mango expert!");
+        } else if (response2.toLowerCase() === 'no') {
+            console.log("Don't worry! You learn can learn a new thing everyday."); 
+        } else {
+            console.log("Invalid response. Please answer with 'yes' or 'no'")
+        }
+    }
+</script>
+</div>
 <body>
 <header>
     <h1>Name a More Iconic Trio</h1>
@@ -27,12 +52,45 @@
         <img src="https://st3.depositphotos.com/32369146/37243/i/450/depositphotos_372437224-stock-photo-mango-isolated-white-background.jpg" >
         <p> This mango is also produces in Mexico, Ecuador, and Peru. However, is only available from March to July. It holds a sweet and sour flavoring. Has a peach aroma with a small pit and smooth texture. Once ripe it slightly wrinkles and turns a deep yellow color.</p>
     </section>
+    <h4>If you'd like more information on Mangoes, fill the form below!</h4> 
+    <form id="contactForm">
+        <div class="contact"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="contact">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="contact">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        let contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', function(event){
+            event.preventDefault();
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let message = document.getElementById('message').value;
+            if (!name || !email || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+            console.log('Name:', name);
+            console.log('Email:', email);
+            console.log('Message:',message);
+            contactForm.reset();
+        });
+    </script>
 </main>
 </body>
 
 
 <footer>
-    <h4>For more information of the varietys of mangoes you can contact us at:</h4> 
+    <h3>OUR CONTACT INFORMATION</h3>
     <p>Email: Themangowhisperer@yahoo.com</p>
     <p>Phone: 1-800-MANGOES</p>
 </footer>

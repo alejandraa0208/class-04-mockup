@@ -10,7 +10,6 @@ h1 {
 p { text-align: center;}
 img { width: 325px;
       height: 300px;
-      
 }
 div {
     width: 50px;
@@ -33,4 +32,8 @@ h3 {
 footer { 
     text-align: center;
     border-style: double;
+}
+ 
+ .contact {
+    width: 300px;
 }
