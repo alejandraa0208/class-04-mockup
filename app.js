@@ -2,11 +2,11 @@ function askQuestion(promptText, yesAnswer, yesAnswerOutput,noAnswer, noAnswerOu
 let response = prompt(promptText);
 if (response !== null) {
     if (response.toLowerCase()=== yesAnswer) {
-        console.log(yesAnswerOutput);
+        alert(yesAnswerOutput);
     } else if (response.toLowerCase() === noAnswer) {
-        console.log(noAnswerOutput);
+        alert(noAnswerOutput);
     } else {
-        console.log('Invalid response. Please answer \'yes\' or \'no\'.'); 
+        alert('Invalid response. Please answer \'yes\' or \'no\'.'); 
     }
 }
 
